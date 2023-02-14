@@ -111,19 +111,4 @@ def delete(
     "message": "Success!"
   }
 
-# @app.get("/items/{item_id}")
-# def read_item(item_id: int, q: Union[str, None] = None):
-#     url = "http://localhost:8071"
-#     db = 'ductoan'
-#     username = 'admin'
-#     password = 'admin'
 
-#     common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(url))
-#     uid = common.authenticate(db, username, password, {})
-#     print("UID", uid)
-#     models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))
-#     partners = models.execute_kw(db, uid, password, 'res.partner','search', [[]], {'offset':20, 'limit' : 5})
-#     partner_rec = models.execute_kw(db, uid, password, 'res.partner', 'read', [partners] ,{'fields':['id','name']})
-#     print("Partner_rec : ")
-#     for partner in partner_rec:
-#         print(partner)
